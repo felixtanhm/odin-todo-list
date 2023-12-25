@@ -1,5 +1,5 @@
 {
-  "name": "project-setup",
+  "name": "odin-todo-list",
   "version": "1.0.0",
   "private": true,
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felixtanhm/proj-setup.git"
+    "url": "git+https://github.com/felixtanhm/odin-todo-list.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/felixtanhm/proj-setup/issues"
+    "url": "https://github.com/felixtanhm/odin-todo-list/issues"
   },
-  "homepage": "https://github.com/felixtanhm/proj-setup#readme",
+  "homepage": "https://github.com/felixtanhm/odin-todo-list#readme",
   "devDependencies": {
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
@@ -35,5 +35,6 @@
   },
   "dependencies": {
     "clean-webpack-plugin": "^4.0.0"
-  }
+  },
+  "description": "---"
 }
