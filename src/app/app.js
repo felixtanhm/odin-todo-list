@@ -1,20 +1,17 @@
-import inputsAreValid from "./utils/inputs-are-valid";
-import parseInputs from "./utils/parse-inputs";
+import tasks from "./modules/tasks";
 
-const run = (alertService, componentService) => {
-  alertService.hideErrors();
+tasks.create(
+  {
+    title: "values.title",
+    details: "values.details",
+    priority: "values.priority",
+    dueDate: new Date(),
+    project: "values.project",
+  },
+  123
+);
+console.log(tasks.getList());
+console.log(tasks.getTask(2));
 
-  componentService.onClick(() => {
-    alertService.hideErrors();
-    const inputs = componentService.getInputs();
-    const parsedInputs = parseInputs(...inputs);
-    if (inputsAreValid(...parsedInputs)) {
-      const [numA, numB] = parsedInputs;
-      componentService.setResult(numA + numB);
-    } else {
-      componentService.setResult("");
-      alertService.handleAdditionError(inputs, parsedInputs);
-    }
-  });
-};
+const run = () => {};
 export default run;
