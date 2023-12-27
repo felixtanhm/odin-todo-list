@@ -9,9 +9,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title></title>
   </head>
-  <body class="container">
-    <header></header>
-    <main></main>
+  <body>
+    <header>
+      <h1>Odin's Todo List</h1>
+    </header>
+    <div id="mobile-menu"></div>
+    <main>
+      <div id="main-menu">
+        <button id="add-new" class="btn-primary">Add New</button>
+        <h2>Filters</h2>
+        <div class="filters">
+          <div class="filter">All Tasks</div>
+          <div class="filter">Today</div>
+          <div class="filter">Next 7 days</div>
+          <div class="filter">Important</div>
+        </div>
+        <h2>Projects</h2>
+        <div id="project-container" class="filters"></div>
+      </div>
+      <div id="content">
+        <div id="current-selection">
+          <h2>All Tasks</h2>
+        </div>
+        <div id="task-container"></div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>

@@ -1,5 +1,5 @@
-const inputsAreValid = (...input) => {
-  return input.every((num) => typeof num === "number" && !isNaN(num));
+const utils = () => {
+  function createId() {}
 };
 
 export default inputsAreValid;
