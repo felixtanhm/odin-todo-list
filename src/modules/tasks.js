@@ -1,3 +1,5 @@
+import render from "./render";
+
 const tasks = (() => {
   let taskList = [];
 
@@ -14,7 +16,8 @@ const tasks = (() => {
       modifiedAt: new Date(),
     };
     taskList.push(newTask);
-    return true;
+    render.task(newTask);
+    return newTask;
   }
 
   function edit(task, values, taskIndex) {
